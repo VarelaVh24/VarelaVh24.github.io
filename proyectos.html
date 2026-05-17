@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos.css" />
+    <title>Proyectos</title>
+    <style>
+      div a[href]{
+        color:rgb(105, 188, 255);
+    
+      }
+      .proyecto-dest:hover {
+        border-color: rgba(124, 58, 237, 0.4);
+        transform: translateY(-3px);
+      }
+      .proyecto-deco:hover {
+        border-color: rgba(124, 58, 237, 0.4);
+        transform: translateY(-3px);
+      }
+      .info-dest {
+        padding-bottom: 0px;
+        color: #a7a9be;
+      }
+
+      h2 {
+        font-size: 60px;
+      }
+
+      .descripcion {
+        font-size: 20px;
+        margin-bottom: 3px;
+        color: #a7a9be;
+      }
+
+      .proyecto-cuadros {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+        margin: 45px 60px;
+      }
+
+      .proyecto-deco {
+        background-color: #222222;
+        padding: 0px 40px;
+        padding-bottom: 15px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgb(183, 0, 255);
+        color: #ffffff;
+        border-top: 4px solid #3498db;
+        transition:
+          border-color 0.2s,
+          transform 0.2s;
+      }
+
+      .proyecto-dest {
+        background-color: #222222;
+        color: #ffffff;
+        border: 1px solid rgba(124, 58, 237, 0.25);
+        box-shadow: 0 4px 6px rgb(183, 0, 255);
+        border-top: 4px solid #3498db;
+        border-radius: 24px;
+        padding: 40px;
+        margin-bottom: 30px;
+        display: grid;
+        grid-template-columns: 1fr 0.5fr;
+        gap: 20px;
+        transition:
+          border-color 0.2s,
+          transform 0.2s;
+      }
+
+      .imagen-visual {
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 100px;
+      }
+
+      .fav {
+        font-size: 10px;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        background: rgba(124, 58, 237, 0.2);
+        color: #a78bfa;
+        border: 1px solid rgba(124, 58, 237, 0.3);
+        padding: 3px 12px;
+        border-radius: 99px;
+        display: inline-block;
+        margin-bottom: 1rem;
+      }
+
+      .h2-proyec {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Portafolio</div>
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="sobre-mi.html">Sobre mí</a></li>
+          <li><a href="habilidades.html">Habilidades</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="centrado">
+      <div class="contenido">
+        <h1 class="degradado">Proyectos</h1>
+        <p class="descripcion">
+          Estos son algunos proyectos en los que trabaje en el tiempo que llevo
+          en la Universidad:
+        </p>
+
+        <div class="proyecto-cuadros">
+          <div class="proyecto-dest">
+            <div>
+              <span class="fav">⭐ Favorito</span>
+              <h2 class="h2-proyec">Ilion</h2>
+              <p class="info-dest">
+                Un sistema de ayuda para la salud más especificamente para
+                doctores. Utiliza IA para poder hacer un tratamiento sugerido
+                con los datos que un doctor le haya ingresado del diagnostico
+                que le hizo al paciente.
+              </p>
+              <a href="https://github.com/VarelaVh24/-lion-Admin" class="project-link">Ver repositorio →</a>
+            </div>
+            <div class="imagen-visual">🧑🏼‍⚕️</div>
+          </div>
+        </div>
+
+        <div class="proyecto-cuadros">
+          <div class="proyecto-deco">
+            <h3>Looper (Mejora del sistema)</h3>
+            <p class="info-dest">
+              Es una mejora del sistema de monitorea vehiculos de carga (Como
+              camiones, camioneta o vehiculos) por medio de satelites.
+            </p>
+            <a href="#" class="project-link">Ver detalles →</a>
+          </div>
+        </div>
+
+        <div class="proyecto-cuadros">
+          <div class="proyecto-deco">
+            <h3>Maquina de Moore - Milie y Milie - Moore</h3>
+            <p class="info-dest">
+              Hicimos un sistema en el que ingresabamos una maquina de Moore y
+              se convertia a Milie, y si ingresabamos una maquina de Milie se
+              convertiria a Moore
+            </p>
+            <a href="#" class="project-link">Ver más →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 - Oscar Varela</p>
+    </footer>
+  </body>
+</html>
