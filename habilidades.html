@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos.css" />
+    <title>Habilidades</title>
+    <style>
+      .descripcion {
+        font-size: 20px;
+        margin-bottom: 3px;
+        color: #a7a9be;
+      }
+
+      .duras-deco:hover {
+        border-color: rgba(124, 58, 237, 0.4);
+        transform: translateY(-3px);
+      }
+
+      .duras-cuadros {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+        margin: 45px 60px;
+      }
+
+      .duras-deco {
+        background-color: #222222;
+        padding: 10px 40px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgb(183, 0, 255);
+        font-weight: bold;
+        color: #ffffff;
+        border-top: 4px solid #3498db;
+        transition:
+          border-color 0.2s,
+          transform 0.2s;
+      }
+
+      .tag {
+        display: inline-block;
+        font-size: 11px;
+        letter-spacing: 1.3px;
+        text-transform: uppercase;
+        color: rgb(58, 156, 237);
+        border: 1px solid rgb(58, 115, 237);
+        padding: 4px 14px;
+        border-radius: 99px;
+        margin-top: 60px;
+      }
+
+      .icono {
+        margin: 0 3px;
+        margin-bottom: 10px;
+        font-size: 30px;
+        text-align: center;
+      }
+
+      .nombre {
+        text-align: center;
+        font-size: 15px;
+        font-weight: 500;
+        margin: 0 3px;
+      }
+
+      .blandas-cuadros {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 20px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        padding-left: 75px;
+      }
+
+      .blandas-deco {
+        background-color: #222222;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgb(183, 0, 255);
+        color: #ffffff;
+        border-top: 4px solid #3498db;
+        padding: 15px 30px;
+        display: flex;
+        gap: 13px;
+        align-items: flex-start;
+        transition:
+          border-color 0.2s,
+          transform 0.2s;
+      }
+
+      .blandas-deco:hover {
+        border-color: rgba(124, 58, 237, 0.4);
+        transform: translateY(-3px);
+      }
+
+      .blanda-icono {
+        font-size: 20px;
+      }
+
+      .blanda-nombre {
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 3px;
+      }
+
+      .blanda-desc {
+        font-size: 12px;
+        color: var(--muted);
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Portafolio</div>
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="sobre-mi.html">Sobre mí</a></li>
+          <li><a href="habilidades.html">Habilidades</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="centrado">
+      <div class="contenido">
+        <h1 class="degradado">Habilidades</h1>
+        <p class="descripcion">
+          Herramientas y tecnologías que estoy aprendiendo a dominar y que
+          utilizo para construir soluciones eficientes e innovadoras.
+        </p>
+
+        <div class="tag">Habilidades Duras</div>
+        <div class="duras-cuadros">
+          <div class="duras-deco">
+            <div class="icono">🎨</div>
+            <div class="nombre">CSS</div>
+          </div>
+          <div class="duras-deco">
+            <div class="icono">©️</div>
+            <div class="nombre">C++</div>
+          </div>
+          <div class="duras-deco">
+            <div class="icono">🖌️</div>
+            <div class="nombre">UX/UI</div>
+          </div>
+          <div class="duras-deco">
+            <div class="icono">🔴</div>
+            <div class="nombre">Java</div>
+          </div>
+          <div class="duras-deco">
+            <div class="icono">🟡</div>
+            <div class="nombre">JavaScript</div>
+          </div>
+          <div class="duras-deco">
+            <div class="icono">🐍</div>
+            <div class="nombre">Python</div>
+          </div>
+          <div class="duras-deco">
+            <div class="icono">📑</div>
+            <div class="nombre">SQL</div>
+          </div>
+          <div class="duras-deco">
+            <div class="icono">🐧</div>
+            <div class="nombre">Linux</div>
+          </div>
+          <div class="duras-deco">
+            <div class="icono">💂🏼</div>
+            <div class="nombre">Ingles</div>
+          </div>
+          <div class="duras-deco">
+            <div class="icono">🧑🏼‍🍳</div>
+            <div class="nombre">Frances</div>
+          </div>
+        </div>
+        <div class="tag">Habilidades Blandas</div>
+        <div class="blandas-cuadros">
+          <div class="blandas-deco">
+            <span class="blanda-icono">👥</span>
+            <div>
+              <div class="blanda-nombre">Trabajo en Equipo</div>
+              <div class="blanda-desc">
+                Colaboro bien en equipos ágiles y multidisciplinarios
+              </div>
+            </div>
+          </div>
+          <div class="blandas-deco">
+            <span class="blanda-icono">📐</span>
+            <div>
+              <div class="blanda-nombre">Atención al detalle</div>
+              <div class="blanda-desc">
+                Código limpio, bien documentado y probado
+              </div>
+            </div>
+          </div>
+          <div class="blandas-deco">
+            <span class="blanda-icono">🧠</span>
+            <div>
+              <div class="blanda-nombre">Inteligencia emocional</div>
+              <div class="blanda-desc">
+                Reconozco y gestiono mis emociones y las de los demás
+              </div>
+            </div>
+          </div>
+          <div class="blandas-deco">
+            <span class="blanda-icono">🧩</span>
+            <div>
+              <div class="blanda-nombre">Resolución de problemas</div>
+              <div class="blanda-desc">
+                Enfoque analítico para encontrar soluciones eficientes
+              </div>
+            </div>
+          </div>
+          <div class="blandas-deco">
+            <span class="blanda-icono">🏃🏼‍➡️</span>
+            <div>
+              <div class="blanda-nombre">Adaptabilidad</div>
+              <div class="blanda-desc">
+                Me adapto a nuevos entornos y desafíos con facilidad
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-contenido">
+        <p class="copy">&copy; 2026 - Oscar Varela</p>
+        <div class="redes-sociales">
+          <a class="linke" href="https://www.linkedin.com/in/oscar-daniel-varela-hernandez-005752331/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="git" href="https://github.com/VarelaVh24" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a class="insta" href="https://www.instagram.com/oscar_daniel2293/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a class="whats" href="https://wa.me/4426074781?text=Hola,%20estoy%20interesado%20en%20saber%20más%20sobre%20sus%20servicios" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
